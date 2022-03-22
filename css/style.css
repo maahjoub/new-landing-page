@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  color: #000;
+}
+.header {
+}
+.header .container {
+  width: 100vw;
+  height: 400px;
+  background-color: blue;
+  clip-path: ellipse(67% 80% at 34% 0%);
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  background-color: #ffffff63;
+}
+.header .navbar .brand {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+.header .navbar .brand span {
+  color: #000;
+}
+.header .navbar .nav-list {
+  display: flex;
+  list-style: none;
+}
+.header .navbar .nav-list .nav-linl {
+  margin: 5px;
+  color: rgb(238, 238, 238);
+}
+.information {
+  padding: 20px 85px;
+  margin: 0px 20px;
+}
+.header .navbar .buy {
+  background-color: #fff;
+}
+.information .header-info {
+  width: 60%;
+}
+.information .title {
+  color: #fff;
+  font-weight: 800;
+}
+.information .text {
+  margin: 20px 0;
+  color: #ccc;
+}
+.order {
+  background-color: #000;
+  color: #fff;
+  margin: 10px;
+}
+.order svg {
+  color: #fe4c93;
+}
+.img img {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  width: 400px;
+}
+.aboutprod1 {
+  display: flex;
+  margin: 60px auto 30px;
+  width: 90vw;
+}
+.aboutprod1 .about {
+  padding: 10px 50px;
+  margin-bottom: 10px;
+}
+.aboutprod1 .about .text {
+  font-size: 12px;
+  color: rgb(77, 123, 250);
+  font-weight: 600;
+  display: block;
+  margin: 10px 0;
+}
+.aboutprod1 .about .title {
+  font-weight: 900;
+  font-size: 24px;
+}
+.aboutprod1 .about .content {
+  color: #888;
+  font-size: 18px;
+  margin: 7px 0 15px 0;
+  text-align: justify;
+}
+.aboutprod1 .about .list {
+  list-style: decimal;
+  color: #3c3c3c;
+}
+.aboutprod1 .about .list li {
+  padding: 0 0 5px 3px;
+}
+.aboutprod1 img {
+  width: 40%;
+  max-width: 100%;
+  padding: 2px;
+  background-color: #999;
+  border-radius: 10px;
+}
+.mor-info {
+  background-color: #dddddd4d;
+  text-align: center;
+  padding: 20px 0;
+}
+.mor-info .title {
+  font-size: 30px;
+  padding: 10px;
+  margin: 0 0 10px 0;
+}
+.mor-info .content {
+  color: #999;
+  font-size: 18px;
+  width: 40%;
+  margin: auto;
+}
+.mor-info .col-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  width: 85%;
+  margin: auto;
+}
+.mor-info .col-4 .card p {
+  color: #999;
+  padding: 10px 20px;
+}
+.mor-info .col-4 .card {
+  width: calc((100% - 30px) / 3);
+  margin: 0 0 5px;
+  background-color: #ffffff8f;
+  padding: 10px;
+  border-radius: 4px;
+}
+.mor-info .col-4 .card svg {
+  padding: 5px;
+  color: cornflowerblue;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.demo {
+  position: relative;
+  margin-bottom: 30px;
+  background-image: url(../img/air-back.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+}
+.demo .body {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  z-index: 1;
+}
+.demo .body h3 {
+  font-size: 30px;
+}
+.demo .body p {
+  color: #ffffff8c;
+  margin: 10px 0;
+}
+.demo .body svg {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.demo .body svg:hover {
+  transform: scale(2);
+}
+.demo .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0017eb8a;
+}
+@media (max-width: 767px) {
+  .header .navbar .buy,
+  .header .navbar .nav-list {
+    font-size: 12px;
+  }
+  .img img {
+    position: relative;
+    top: -280px;
+    left: 200px;
+    width: 300px;
+  }
+  .information .title {
+    font-size: 14px;
+  }
+  .information .text {
+    font-size: 13px;
+    text-align: left;
+    padding: 0 8px 0 0;
+  }
+  .information .header-info {
+    width: 50%;
+  }
+  .information {
+    padding: 20px;
+  }
+  .img {
+    position: absolute;
+  }
+  .img img {
+    left: 170px;
+    width: 205px;
+  }
+  .aboutprod1 {
+    flex-direction: column;
+    margin-top: -30px;
+  }
+  .aboutprod1 .about .content {
+    font-size: 13px;
+  }
+  .aboutprod1 img {
+    width: 100%;
+  }
+  .aboutprod1 .about {
+    padding: 10px 50px;
+  }
+  .mor-info .col-4 {
+    flex-direction: column;
+  }
+  .mor-info .col-4 .card {
+    width: 100%;
+  }
+  .mor-info .title {
+    font-size: 18px;
+  }
+  .mor-info .content {
+    width: auto;
+    padding: 0 20px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .mor-info .col-4 {
+    width: 100vw;
+  }
+  .demo {
+    height: 200px;
+  }
+  .demo .body {
+    width: auto;
+  }
+  .aboutprod1 .about .title {
+      font-size: 18px;
+  }
+}
